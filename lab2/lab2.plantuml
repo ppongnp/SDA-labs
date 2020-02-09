@@ -1,0 +1,351 @@
+@startuml
+
+title __LAB2's Class Diagram__\n
+
+  namespace  {
+    class GroceryList {
+    }
+  }
+  
+
+  namespace  {
+    class Test {
+    }
+  }
+  
+
+  namespace  {
+    class TestWithout {
+    }
+  }
+  
+
+  namespace  {
+    namespace uitarHero {
+      abstract class guitarHero.GameCharacter {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace uitarHero {
+      class guitarHero.GameCharacterHendrix {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace uitarHero {
+      class guitarHero.GameCharacterSlash {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace uitarHero {
+      class guitarHero.GameCharacterYoung {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace uitarHero {
+      interface guitarHero.GuitarBehavior {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace uitarHero {
+      class guitarHero.Guitar_GibsonLesPaul {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace uitarHero {
+      class guitarHero.Guitar_GibsonSG {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace uitarHero {
+      class guitarHero.Guitar_Telecaster {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace uitarHero {
+      interface guitarHero.SoloBehavior {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace uitarHero {
+      class guitarHero.Solo_JumpOffStage {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace uitarHero {
+      class guitarHero.Solo_PutGuitarOnFire {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace uitarHero {
+      class guitarHero.Solo_SmashTheGuitar {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace uitarHero {
+      class guitarHero.TestGuitarHero {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ecture.babymonitor {
+      class lecture.babymonitor.Baby {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ecture.babymonitor {
+      class lecture.babymonitor.BabyMonitorAdvanced {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ecture.babymonitor {
+      class lecture.babymonitor.BabyMonitorSimple {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ecture.babymonitor {
+      interface lecture.babymonitor.Observer {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ecture.babymonitor {
+      interface lecture.babymonitor.Subject {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ecture.babymonitor {
+      class lecture.babymonitor.TestBabyMonitor {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ecture.strategy {
+      class lecture.strategy.DecoyDuck {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ecture.strategy {
+      abstract class lecture.strategy.Duck {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ecture.strategy {
+      class lecture.strategy.FakeQuack {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ecture.strategy {
+      interface lecture.strategy.FlyBehavior {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ecture.strategy {
+      class lecture.strategy.FlyNoWay {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ecture.strategy {
+      class lecture.strategy.FlyRocketPowered {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ecture.strategy {
+      class lecture.strategy.FlyWithWings {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ecture.strategy {
+      class lecture.strategy.MallardDuck {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ecture.strategy {
+      class lecture.strategy.MiniDuckSimulator {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ecture.strategy {
+      class lecture.strategy.MiniDuckSimulator1 {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ecture.strategy {
+      class lecture.strategy.ModelDuck {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ecture.strategy {
+      class lecture.strategy.MuteQuack {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ecture.strategy {
+      class lecture.strategy.Quack {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ecture.strategy {
+      interface lecture.strategy.QuackBehavior {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ecture.strategy {
+      class lecture.strategy.RedHeadDuck {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ecture.strategy {
+      class lecture.strategy.RubberDuck {
+      }
+    }
+  }
+  
+
+  namespace  {
+    namespace ecture.strategy {
+      class lecture.strategy.Squeak {
+      }
+    }
+  }
+  
+
+  guitarHero.GameCharacter o-- guitarHero.GuitarBehavior : guitarBehavior
+  guitarHero.GameCharacter o-- guitarHero.SoloBehavior : soloBehavior
+  guitarHero.GameCharacterHendrix -up-|> guitarHero.GameCharacter
+  guitarHero.GameCharacterSlash -up-|> guitarHero.GameCharacter
+  guitarHero.GameCharacterYoung -up-|> guitarHero.GameCharacter
+  guitarHero.Guitar_GibsonLesPaul .up.|> guitarHero.GuitarBehavior
+  guitarHero.Guitar_GibsonSG .up.|> guitarHero.GuitarBehavior
+  guitarHero.Guitar_Telecaster .up.|> guitarHero.GuitarBehavior
+  guitarHero.Solo_JumpOffStage .up.|> guitarHero.SoloBehavior
+  guitarHero.Solo_PutGuitarOnFire .up.|> guitarHero.SoloBehavior
+  guitarHero.Solo_SmashTheGuitar .up.|> guitarHero.SoloBehavior
+  lecture.babymonitor.Baby .up.|> lecture.babymonitor.Subject
+  lecture.babymonitor.BabyMonitorAdvanced .up.|> lecture.babymonitor.Observer
+  lecture.babymonitor.BabyMonitorAdvanced o-- lecture.babymonitor.Subject : cdata
+  lecture.babymonitor.BabyMonitorAdvanced o-- lecture.babymonitor.Subject : mdata
+  lecture.babymonitor.BabyMonitorSimple .up.|> lecture.babymonitor.Observer
+  lecture.babymonitor.BabyMonitorSimple o-- lecture.babymonitor.Subject : mdata
+  lecture.strategy.DecoyDuck -up-|> lecture.strategy.Duck
+  lecture.strategy.Duck o-- lecture.strategy.FlyBehavior : flyBehavior
+  lecture.strategy.Duck o-- lecture.strategy.QuackBehavior : quackBehavior
+  lecture.strategy.FakeQuack .up.|> lecture.strategy.QuackBehavior
+  lecture.strategy.FlyNoWay .up.|> lecture.strategy.FlyBehavior
+  lecture.strategy.FlyRocketPowered .up.|> lecture.strategy.FlyBehavior
+  lecture.strategy.FlyWithWings .up.|> lecture.strategy.FlyBehavior
+  lecture.strategy.MallardDuck -up-|> lecture.strategy.Duck
+  lecture.strategy.ModelDuck -up-|> lecture.strategy.Duck
+  lecture.strategy.MuteQuack .up.|> lecture.strategy.QuackBehavior
+  lecture.strategy.Quack .up.|> lecture.strategy.QuackBehavior
+  lecture.strategy.RedHeadDuck -up-|> lecture.strategy.Duck
+  lecture.strategy.RubberDuck -up-|> lecture.strategy.Duck
+  lecture.strategy.Squeak .up.|> lecture.strategy.QuackBehavior
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

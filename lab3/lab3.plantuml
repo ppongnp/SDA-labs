@@ -1,0 +1,327 @@
+@startuml
+
+title __LAB3's Class Diagram__\n
+
+  namespace fm {
+    class fm.NJSlotBonus {
+    }
+  }
+  
+
+  namespace fm {
+    class fm.NJSlotProgressive {
+    }
+  }
+  
+
+  namespace fm {
+    class fm.NJSlotStore {
+    }
+  }
+  
+
+  namespace fm {
+    class fm.NJSlotStraight {
+    }
+  }
+  
+
+  namespace fm {
+    class fm.NVSlotBonus {
+    }
+  }
+  
+
+  namespace fm {
+    class fm.NVSlotProgressive {
+    }
+  }
+  
+
+  namespace fm {
+    class fm.NVSlotStore {
+    }
+  }
+  
+
+  namespace fm {
+    class fm.NVSlotStraight {
+    }
+  }
+  
+
+  namespace fm {
+    abstract class fm.Slot {
+    }
+  }
+  
+
+  namespace fm {
+    abstract class fm.SlotStore {
+    }
+  }
+  
+
+  namespace fm {
+    class fm.TestSlots {
+    }
+  }
+  
+
+  namespace fm {
+    class fm.WSSlotBonus {
+    }
+  }
+  
+
+  namespace fm {
+    class fm.WSSlotProgressive {
+    }
+  }
+  
+
+  namespace fm {
+    class fm.WSSlotStore {
+    }
+  }
+  
+
+  namespace fm {
+    class fm.WSSlotStraight {
+    }
+  }
+  
+
+  namespace fm {
+    enum slottype {
+    }
+  }
+  
+
+  namespace pizza {
+    class pizza.ChicagoPizzaStore {
+    }
+  }
+  
+
+  namespace pizza {
+    class pizza.ChicagoStyleCheesePizza {
+    }
+  }
+  
+
+  namespace pizza {
+    class pizza.ChicagoStyleClamPizza {
+    }
+  }
+  
+
+  namespace pizza {
+    class pizza.ChicagoStylePepperoniPizza {
+    }
+  }
+  
+
+  namespace pizza {
+    class pizza.ChicagoStyleVeggiePizza {
+    }
+  }
+  
+
+  namespace pizza {
+    class pizza.DependentPizzaStore {
+    }
+  }
+  
+
+  namespace pizza {
+    class pizza.NYPizzaStore {
+    }
+  }
+  
+
+  namespace pizza {
+    class pizza.NYStyleCheesePizza {
+    }
+  }
+  
+
+  namespace pizza {
+    class pizza.NYStyleClamPizza {
+    }
+  }
+  
+
+  namespace pizza {
+    class pizza.NYStylePepperoniPizza {
+    }
+  }
+  
+
+  namespace pizza {
+    class pizza.NYStyleVeggiePizza {
+    }
+  }
+  
+
+  namespace pizza {
+    abstract class pizza.Pizza {
+    }
+  }
+  
+
+  namespace pizza {
+    abstract class pizza.PizzaStore {
+    }
+  }
+  
+
+  namespace pizza {
+    class pizza.PizzaTestDrive {
+    }
+  }
+  
+
+  namespace xmastree {
+    class xmastree.BalsamFir {
+    }
+  }
+  
+
+  namespace xmastree {
+    class xmastree.BlueBall {
+    }
+  }
+  
+
+  namespace xmastree {
+    class xmastree.BlueSpruce {
+    }
+  }
+  
+
+  namespace xmastree {
+    class xmastree.DouglasFir {
+    }
+  }
+  
+
+  namespace xmastree {
+    class xmastree.FraserFir {
+    }
+  }
+  
+
+  namespace xmastree {
+    class xmastree.LEDS {
+    }
+  }
+  
+
+  namespace xmastree {
+    class xmastree.Lights {
+    }
+  }
+  
+
+  namespace xmastree {
+    class xmastree.RealStar {
+    }
+  }
+  
+
+  namespace xmastree {
+    class xmastree.RedBall {
+    }
+  }
+  
+
+  namespace xmastree {
+    class xmastree.Ribbon {
+    }
+  }
+  
+
+  namespace xmastree {
+    class xmastree.Ruffles {
+    }
+  }
+  
+
+  namespace xmastree {
+    class xmastree.SilverBall {
+    }
+  }
+  
+
+  namespace xmastree {
+    class xmastree.Star {
+    }
+  }
+  
+
+  namespace xmastree {
+    class xmastree.Test_tree {
+    }
+  }
+  
+
+  namespace xmastree {
+    abstract class xmastree.Tree {
+    }
+  }
+  
+
+  namespace xmastree {
+    abstract class xmastree.TreeDecorator {
+    }
+  }
+  
+
+  fm.NJSlotBonus -up-|> fm.Slot
+  fm.NJSlotProgressive -up-|> fm.Slot
+  fm.NJSlotStore -up-|> fm.SlotStore
+  fm.NJSlotStraight -up-|> fm.Slot
+  fm.NVSlotBonus -up-|> fm.Slot
+  fm.NVSlotProgressive -up-|> fm.Slot
+  fm.NVSlotStore -up-|> fm.SlotStore
+  fm.NVSlotStraight -up-|> fm.Slot
+  fm.WSSlotBonus -up-|> fm.Slot
+  fm.WSSlotProgressive -up-|> fm.Slot
+  fm.WSSlotStore -up-|> fm.SlotStore
+  fm.WSSlotStraight -up-|> fm.Slot
+  pizza.ChicagoPizzaStore -up-|> pizza.PizzaStore
+  pizza.ChicagoStyleCheesePizza -up-|> pizza.Pizza
+  pizza.ChicagoStyleClamPizza -up-|> pizza.Pizza
+  pizza.ChicagoStylePepperoniPizza -up-|> pizza.Pizza
+  pizza.ChicagoStyleVeggiePizza -up-|> pizza.Pizza
+  pizza.NYPizzaStore -up-|> pizza.PizzaStore
+  pizza.NYStyleCheesePizza -up-|> pizza.Pizza
+  pizza.NYStyleClamPizza -up-|> pizza.Pizza
+  pizza.NYStylePepperoniPizza -up-|> pizza.Pizza
+  pizza.NYStyleVeggiePizza -up-|> pizza.Pizza
+  xmastree.BalsamFir -up-|> xmastree.Tree
+  xmastree.BlueBall -up-|> xmastree.TreeDecorator
+  xmastree.BlueSpruce -up-|> xmastree.Tree
+  xmastree.DouglasFir -up-|> xmastree.Tree
+  xmastree.FraserFir -up-|> xmastree.Tree
+  xmastree.LEDS -up-|> xmastree.TreeDecorator
+  xmastree.Lights -up-|> xmastree.TreeDecorator
+  xmastree.RealStar -up-|> xmastree.TreeDecorator
+  xmastree.RedBall -up-|> xmastree.TreeDecorator
+  xmastree.Ribbon -up-|> xmastree.TreeDecorator
+  xmastree.Ruffles -up-|> xmastree.TreeDecorator
+  xmastree.SilverBall -up-|> xmastree.TreeDecorator
+  xmastree.Star -up-|> xmastree.TreeDecorator
+  xmastree.TreeDecorator -up-|> xmastree.Tree
+  xmastree.TreeDecorator o-- xmastree.Tree : tree
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

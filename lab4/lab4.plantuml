@@ -1,0 +1,566 @@
+@startuml
+
+title __LAB4's Class Diagram__\n
+
+  namespace lab.AbstractFactory {
+    class lab.AbstractFactory.ARM {
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    class lab.AbstractFactory.Android {
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    class lab.AbstractFactory.Bills {
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    class lab.AbstractFactory.BonusSlot {
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    class lab.AbstractFactory.CRT {
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    interface lab.AbstractFactory.Cabinet {
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    class lab.AbstractFactory.Coins {
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    interface lab.AbstractFactory.Display {
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    interface lab.AbstractFactory.GPU {
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    class lab.AbstractFactory.LCD {
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    class lab.AbstractFactory.LargeCabinet {
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    class lab.AbstractFactory.Linux {
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    class lab.AbstractFactory.MediumCabinet {
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    class lab.AbstractFactory.NJSlotComponentFactory {
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    class lab.AbstractFactory.NJSlotFactory {
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    class lab.AbstractFactory.NVSlotComponentFactory {
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    class lab.AbstractFactory.NVSlotFactory {
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    interface lab.AbstractFactory.OS {
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    interface lab.AbstractFactory.Payment {
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    class lab.AbstractFactory.ProgressiveSlot {
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    class lab.AbstractFactory.Reels {
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    abstract class lab.AbstractFactory.Slot {
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    interface lab.AbstractFactory.SlotComponentFactory {
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    abstract class lab.AbstractFactory.SlotFactory {
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    class lab.AbstractFactory.SlotMachineApp {
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    class lab.AbstractFactory.SmallCabinet {
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    class lab.AbstractFactory.StraightSlot {
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    class lab.AbstractFactory.Symbian {
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    class lab.AbstractFactory.TicketInAndOut {
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    class lab.AbstractFactory.VGA {
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    class lab.AbstractFactory.WSSlotComponentFactory {
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    class lab.AbstractFactory.WSSlotFactory {
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    class lab.AbstractFactory.WindowsME {
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    class lab.AbstractFactory.WindowsXP {
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    class lab.AbstractFactory.X77 {
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    class lab.AbstractFactory.X86 {
+    }
+  }
+  
+
+  namespace lab.SingletonFactory {
+    abstract class lab.SingletonFactory.Bar {
+    }
+  }
+  
+
+  namespace lab.SingletonFactory {
+    class lab.SingletonFactory.BarProducer {
+    }
+  }
+  
+
+  namespace lab.SingletonFactory {
+    interface lab.SingletonFactory.Factory {
+    }
+  }
+  
+
+  namespace lab.SingletonFactory {
+    class lab.SingletonFactory.SingletonfactoryTest {
+    }
+  }
+  
+
+  namespace lab.SingletonFactory {
+    class lab.SingletonFactory.WonkaBar {
+    }
+  }
+  
+
+  namespace lab.SingletonFactory {
+    class lab.SingletonFactory.WonkaBarFactory {
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    class lect.AbstractFactory.BlackOlives {
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    interface lect.AbstractFactory.Cheese {
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    class lect.AbstractFactory.CheesePizza {
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    class lect.AbstractFactory.ChicagoPizzaIngredientFactory {
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    class lect.AbstractFactory.ChicagoPizzaStore {
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    class lect.AbstractFactory.ClamPizza {
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    interface lect.AbstractFactory.Clams {
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    interface lect.AbstractFactory.Dough {
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    class lect.AbstractFactory.Eggplant {
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    class lect.AbstractFactory.FreshClams {
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    class lect.AbstractFactory.FrozenClams {
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    class lect.AbstractFactory.Garlic {
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    class lect.AbstractFactory.MarinaraSauce {
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    class lect.AbstractFactory.MozzarellaCheese {
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    class lect.AbstractFactory.Mushroom {
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    class lect.AbstractFactory.NYPizzaIngredientFactory {
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    class lect.AbstractFactory.NYPizzaStore {
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    class lect.AbstractFactory.Onion {
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    class lect.AbstractFactory.ParmesanCheese {
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    interface lect.AbstractFactory.Pepperoni {
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    class lect.AbstractFactory.PepperoniPizza {
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    abstract class lect.AbstractFactory.Pizza {
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    interface lect.AbstractFactory.PizzaIngredientFactory {
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    abstract class lect.AbstractFactory.PizzaStore {
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    class lect.AbstractFactory.PizzaTestDrive {
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    class lect.AbstractFactory.PlumTomatoSauce {
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    class lect.AbstractFactory.RedPepper {
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    class lect.AbstractFactory.ReggianoCheese {
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    interface lect.AbstractFactory.Sauce {
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    class lect.AbstractFactory.SlicedPepperoni {
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    class lect.AbstractFactory.Spinach {
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    class lect.AbstractFactory.ThickCrustDough {
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    class lect.AbstractFactory.ThinCrustDough {
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    class lect.AbstractFactory.VeggiePizza {
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    interface lect.AbstractFactory.Veggies {
+    }
+  }
+  
+
+  namespace lect.Logger {
+    class lect.Logger.Logger {
+    }
+  }
+  
+
+  namespace lect.Logger {
+    class lect.Logger.LoggerTester {
+    }
+  }
+  
+
+  namespace lect.Logger {
+    class lect.Logger.Test {
+    }
+  }
+  
+
+  lab.AbstractFactory.ARM .up.|> lab.AbstractFactory.GPU
+  lab.AbstractFactory.Android .up.|> lab.AbstractFactory.OS
+  lab.AbstractFactory.Bills .up.|> lab.AbstractFactory.Payment
+  lab.AbstractFactory.BonusSlot -up-|> lab.AbstractFactory.Slot
+  lab.AbstractFactory.BonusSlot o-- lab.AbstractFactory.SlotComponentFactory : componentFactory
+  lab.AbstractFactory.CRT .up.|> lab.AbstractFactory.Display
+  lab.AbstractFactory.Coins .up.|> lab.AbstractFactory.Payment
+  lab.AbstractFactory.LCD .up.|> lab.AbstractFactory.Display
+  lab.AbstractFactory.LargeCabinet .up.|> lab.AbstractFactory.Cabinet
+  lab.AbstractFactory.Linux .up.|> lab.AbstractFactory.OS
+  lab.AbstractFactory.MediumCabinet .up.|> lab.AbstractFactory.Cabinet
+  lab.AbstractFactory.NJSlotComponentFactory .up.|> lab.AbstractFactory.SlotComponentFactory
+  lab.AbstractFactory.NJSlotFactory -up-|> lab.AbstractFactory.SlotFactory
+  lab.AbstractFactory.NVSlotComponentFactory .up.|> lab.AbstractFactory.SlotComponentFactory
+  lab.AbstractFactory.NVSlotFactory -up-|> lab.AbstractFactory.SlotFactory
+  lab.AbstractFactory.ProgressiveSlot -up-|> lab.AbstractFactory.Slot
+  lab.AbstractFactory.ProgressiveSlot o-- lab.AbstractFactory.SlotComponentFactory : componentFactory
+  lab.AbstractFactory.Reels .up.|> lab.AbstractFactory.Display
+  lab.AbstractFactory.Slot o-- lab.AbstractFactory.Cabinet : cabinet
+  lab.AbstractFactory.Slot o-- lab.AbstractFactory.Display : display
+  lab.AbstractFactory.Slot o-- lab.AbstractFactory.GPU : gpu
+  lab.AbstractFactory.Slot o-- lab.AbstractFactory.Payment : payment
+  lab.AbstractFactory.Slot o-- lab.AbstractFactory.OS : software
+  lab.AbstractFactory.SmallCabinet .up.|> lab.AbstractFactory.Cabinet
+  lab.AbstractFactory.StraightSlot -up-|> lab.AbstractFactory.Slot
+  lab.AbstractFactory.StraightSlot o-- lab.AbstractFactory.SlotComponentFactory : componentFactory
+  lab.AbstractFactory.Symbian .up.|> lab.AbstractFactory.OS
+  lab.AbstractFactory.TicketInAndOut .up.|> lab.AbstractFactory.Payment
+  lab.AbstractFactory.VGA .up.|> lab.AbstractFactory.Display
+  lab.AbstractFactory.WSSlotComponentFactory .up.|> lab.AbstractFactory.SlotComponentFactory
+  lab.AbstractFactory.WSSlotFactory -up-|> lab.AbstractFactory.SlotFactory
+  lab.AbstractFactory.WindowsME .up.|> lab.AbstractFactory.OS
+  lab.AbstractFactory.WindowsXP .up.|> lab.AbstractFactory.OS
+  lab.AbstractFactory.X77 .up.|> lab.AbstractFactory.GPU
+  lab.AbstractFactory.X86 .up.|> lab.AbstractFactory.GPU
+  lab.SingletonFactory.BarProducer o-- lab.SingletonFactory.Factory : wonka
+  lab.SingletonFactory.WonkaBar -up-|> lab.SingletonFactory.Bar
+  lab.SingletonFactory.WonkaBarFactory .up.|> lab.SingletonFactory.Factory
+  lect.AbstractFactory.BlackOlives .up.|> lect.AbstractFactory.Veggies
+  lect.AbstractFactory.CheesePizza -up-|> lect.AbstractFactory.Pizza
+  lect.AbstractFactory.CheesePizza o-- lect.AbstractFactory.PizzaIngredientFactory : ingredientFactory
+  lect.AbstractFactory.ChicagoPizzaIngredientFactory .up.|> lect.AbstractFactory.PizzaIngredientFactory
+  lect.AbstractFactory.ChicagoPizzaStore -up-|> lect.AbstractFactory.PizzaStore
+  lect.AbstractFactory.ClamPizza -up-|> lect.AbstractFactory.Pizza
+  lect.AbstractFactory.ClamPizza o-- lect.AbstractFactory.PizzaIngredientFactory : ingredientFactory
+  lect.AbstractFactory.Eggplant .up.|> lect.AbstractFactory.Veggies
+  lect.AbstractFactory.FreshClams .up.|> lect.AbstractFactory.Clams
+  lect.AbstractFactory.FrozenClams .up.|> lect.AbstractFactory.Clams
+  lect.AbstractFactory.Garlic .up.|> lect.AbstractFactory.Veggies
+  lect.AbstractFactory.MarinaraSauce .up.|> lect.AbstractFactory.Sauce
+  lect.AbstractFactory.MozzarellaCheese .up.|> lect.AbstractFactory.Cheese
+  lect.AbstractFactory.Mushroom .up.|> lect.AbstractFactory.Veggies
+  lect.AbstractFactory.NYPizzaIngredientFactory .up.|> lect.AbstractFactory.PizzaIngredientFactory
+  lect.AbstractFactory.NYPizzaStore -up-|> lect.AbstractFactory.PizzaStore
+  lect.AbstractFactory.Onion .up.|> lect.AbstractFactory.Veggies
+  lect.AbstractFactory.ParmesanCheese .up.|> lect.AbstractFactory.Cheese
+  lect.AbstractFactory.PepperoniPizza -up-|> lect.AbstractFactory.Pizza
+  lect.AbstractFactory.PepperoniPizza o-- lect.AbstractFactory.PizzaIngredientFactory : ingredientFactory
+  lect.AbstractFactory.Pizza o-- lect.AbstractFactory.Cheese : cheese
+  lect.AbstractFactory.Pizza o-- lect.AbstractFactory.Clams : clam
+  lect.AbstractFactory.Pizza o-- lect.AbstractFactory.Dough : dough
+  lect.AbstractFactory.Pizza o-- lect.AbstractFactory.Pepperoni : pepperoni
+  lect.AbstractFactory.Pizza o-- lect.AbstractFactory.Sauce : sauce
+  lect.AbstractFactory.PlumTomatoSauce .up.|> lect.AbstractFactory.Sauce
+  lect.AbstractFactory.RedPepper .up.|> lect.AbstractFactory.Veggies
+  lect.AbstractFactory.ReggianoCheese .up.|> lect.AbstractFactory.Cheese
+  lect.AbstractFactory.SlicedPepperoni .up.|> lect.AbstractFactory.Pepperoni
+  lect.AbstractFactory.Spinach .up.|> lect.AbstractFactory.Veggies
+  lect.AbstractFactory.ThickCrustDough .up.|> lect.AbstractFactory.Dough
+  lect.AbstractFactory.ThinCrustDough .up.|> lect.AbstractFactory.Dough
+  lect.AbstractFactory.VeggiePizza -up-|> lect.AbstractFactory.Pizza
+  lect.AbstractFactory.VeggiePizza o-- lect.AbstractFactory.PizzaIngredientFactory : ingredientFactory
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml
