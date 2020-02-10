@@ -1,0 +1,321 @@
+@startuml
+
+title __ABSTRACTFACTORY's Class Diagram__\n
+
+  namespace lect.AbstractFactory {
+    class lect.AbstractFactory.BlackOlives {
+        + toString()
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    interface lect.AbstractFactory.Cheese {
+        {abstract} + toString()
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    class lect.AbstractFactory.CheesePizza {
+        + CheesePizza()
+        ~ prepare()
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    class lect.AbstractFactory.ChicagoPizzaIngredientFactory {
+        + createCheese()
+        + createClam()
+        + createDough()
+        + createPepperoni()
+        + createSauce()
+        + createVeggies()
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    class lect.AbstractFactory.ChicagoPizzaStore {
+        # createPizza()
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    class lect.AbstractFactory.ClamPizza {
+        + ClamPizza()
+        ~ prepare()
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    interface lect.AbstractFactory.Clams {
+        {abstract} + toString()
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    interface lect.AbstractFactory.Dough {
+        {abstract} + toString()
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    class lect.AbstractFactory.Eggplant {
+        + toString()
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    class lect.AbstractFactory.FreshClams {
+        + toString()
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    class lect.AbstractFactory.FrozenClams {
+        + toString()
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    class lect.AbstractFactory.Garlic {
+        + toString()
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    class lect.AbstractFactory.MarinaraSauce {
+        + toString()
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    class lect.AbstractFactory.MozzarellaCheese {
+        + toString()
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    class lect.AbstractFactory.Mushroom {
+        + toString()
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    class lect.AbstractFactory.NYPizzaIngredientFactory {
+        + createCheese()
+        + createClam()
+        + createDough()
+        + createPepperoni()
+        + createSauce()
+        + createVeggies()
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    class lect.AbstractFactory.NYPizzaStore {
+        # createPizza()
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    class lect.AbstractFactory.Onion {
+        + toString()
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    class lect.AbstractFactory.ParmesanCheese {
+        + toString()
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    interface lect.AbstractFactory.Pepperoni {
+        {abstract} + toString()
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    class lect.AbstractFactory.PepperoniPizza {
+        + PepperoniPizza()
+        ~ prepare()
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    abstract class lect.AbstractFactory.Pizza {
+        ~ name : String
+        ~ veggies : Veggies[]
+        + toString()
+        ~ bake()
+        ~ box()
+        ~ cut()
+        ~ getName()
+        {abstract} ~ prepare()
+        ~ setName()
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    interface lect.AbstractFactory.PizzaIngredientFactory {
+        {abstract} + createCheese()
+        {abstract} + createClam()
+        {abstract} + createDough()
+        {abstract} + createPepperoni()
+        {abstract} + createSauce()
+        {abstract} + createVeggies()
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    abstract class lect.AbstractFactory.PizzaStore {
+        + orderPizza()
+        {abstract} # createPizza()
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    class lect.AbstractFactory.PizzaTestDrive {
+        {static} + main()
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    class lect.AbstractFactory.PlumTomatoSauce {
+        + toString()
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    class lect.AbstractFactory.RedPepper {
+        + toString()
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    class lect.AbstractFactory.ReggianoCheese {
+        + toString()
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    interface lect.AbstractFactory.Sauce {
+        {abstract} + toString()
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    class lect.AbstractFactory.SlicedPepperoni {
+        + toString()
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    class lect.AbstractFactory.Spinach {
+        + toString()
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    class lect.AbstractFactory.ThickCrustDough {
+        + toString()
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    class lect.AbstractFactory.ThinCrustDough {
+        + toString()
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    class lect.AbstractFactory.VeggiePizza {
+        + VeggiePizza()
+        ~ prepare()
+    }
+  }
+  
+
+  namespace lect.AbstractFactory {
+    interface lect.AbstractFactory.Veggies {
+        {abstract} + toString()
+    }
+  }
+  
+
+  lect.AbstractFactory.BlackOlives .up.|> lect.AbstractFactory.Veggies
+  lect.AbstractFactory.CheesePizza -up-|> lect.AbstractFactory.Pizza
+  lect.AbstractFactory.CheesePizza o-- lect.AbstractFactory.PizzaIngredientFactory : ingredientFactory
+  lect.AbstractFactory.ChicagoPizzaIngredientFactory .up.|> lect.AbstractFactory.PizzaIngredientFactory
+  lect.AbstractFactory.ChicagoPizzaStore -up-|> lect.AbstractFactory.PizzaStore
+  lect.AbstractFactory.ClamPizza -up-|> lect.AbstractFactory.Pizza
+  lect.AbstractFactory.ClamPizza o-- lect.AbstractFactory.PizzaIngredientFactory : ingredientFactory
+  lect.AbstractFactory.Eggplant .up.|> lect.AbstractFactory.Veggies
+  lect.AbstractFactory.FreshClams .up.|> lect.AbstractFactory.Clams
+  lect.AbstractFactory.FrozenClams .up.|> lect.AbstractFactory.Clams
+  lect.AbstractFactory.Garlic .up.|> lect.AbstractFactory.Veggies
+  lect.AbstractFactory.MarinaraSauce .up.|> lect.AbstractFactory.Sauce
+  lect.AbstractFactory.MozzarellaCheese .up.|> lect.AbstractFactory.Cheese
+  lect.AbstractFactory.Mushroom .up.|> lect.AbstractFactory.Veggies
+  lect.AbstractFactory.NYPizzaIngredientFactory .up.|> lect.AbstractFactory.PizzaIngredientFactory
+  lect.AbstractFactory.NYPizzaStore -up-|> lect.AbstractFactory.PizzaStore
+  lect.AbstractFactory.Onion .up.|> lect.AbstractFactory.Veggies
+  lect.AbstractFactory.ParmesanCheese .up.|> lect.AbstractFactory.Cheese
+  lect.AbstractFactory.PepperoniPizza -up-|> lect.AbstractFactory.Pizza
+  lect.AbstractFactory.PepperoniPizza o-- lect.AbstractFactory.PizzaIngredientFactory : ingredientFactory
+  lect.AbstractFactory.Pizza o-- lect.AbstractFactory.Cheese : cheese
+  lect.AbstractFactory.Pizza o-- lect.AbstractFactory.Clams : clam
+  lect.AbstractFactory.Pizza o-- lect.AbstractFactory.Dough : dough
+  lect.AbstractFactory.Pizza o-- lect.AbstractFactory.Pepperoni : pepperoni
+  lect.AbstractFactory.Pizza o-- lect.AbstractFactory.Sauce : sauce
+  lect.AbstractFactory.PlumTomatoSauce .up.|> lect.AbstractFactory.Sauce
+  lect.AbstractFactory.RedPepper .up.|> lect.AbstractFactory.Veggies
+  lect.AbstractFactory.ReggianoCheese .up.|> lect.AbstractFactory.Cheese
+  lect.AbstractFactory.SlicedPepperoni .up.|> lect.AbstractFactory.Pepperoni
+  lect.AbstractFactory.Spinach .up.|> lect.AbstractFactory.Veggies
+  lect.AbstractFactory.ThickCrustDough .up.|> lect.AbstractFactory.Dough
+  lect.AbstractFactory.ThinCrustDough .up.|> lect.AbstractFactory.Dough
+  lect.AbstractFactory.VeggiePizza -up-|> lect.AbstractFactory.Pizza
+  lect.AbstractFactory.VeggiePizza o-- lect.AbstractFactory.PizzaIngredientFactory : ingredientFactory
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

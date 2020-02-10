@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18be1212-7d6d-4020-86b7-c4208d7db9cd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/lab/SingletonFactory/OompaloompaBar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lab/SingletonFactory/OompaloompaBarFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,7 +47,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.SingletonfactoryTest">
+    <configuration name="SingletonfactoryTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lab.SingletonFactory.SingletonfactoryTest" />
+      <module name="lab4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lab.SingletonFactory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SlotMachineApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lab.AbstractFactory.SlotMachineApp" />
       <module name="lab4" />
@@ -61,6 +76,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SingletonfactoryTest" />
         <item itemvalue="Application.SlotMachineApp" />
       </list>
     </recent_temporary>
@@ -78,6 +94,7 @@
       <workItem from="1580697250522" duration="1300000" />
       <workItem from="1580701388315" duration="8174000" />
       <workItem from="1581244491179" duration="32000" />
+      <workItem from="1581244562640" duration="2181000" />
     </task>
     <servers />
   </component>
@@ -89,7 +106,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

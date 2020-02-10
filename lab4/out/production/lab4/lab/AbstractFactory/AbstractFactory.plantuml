@@ -1,0 +1,333 @@
+@startuml
+
+title __ABSTRACTFACTORY's Class Diagram__\n
+
+  namespace lab.AbstractFactory {
+    class lab.AbstractFactory.ARM {
+        + toString()
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    class lab.AbstractFactory.Android {
+        + toString()
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    class lab.AbstractFactory.Bills {
+        + toString()
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    class lab.AbstractFactory.BonusSlot {
+        ~ type : String
+        + BonusSlot()
+        ~ build()
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    class lab.AbstractFactory.CRT {
+        + toString()
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    interface lab.AbstractFactory.Cabinet {
+        {abstract} + toString()
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    class lab.AbstractFactory.Coins {
+        + toString()
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    interface lab.AbstractFactory.Display {
+        {abstract} + toString()
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    interface lab.AbstractFactory.GPU {
+        {abstract} + toString()
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    class lab.AbstractFactory.LCD {
+        + toString()
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    class lab.AbstractFactory.LargeCabinet {
+        + toString()
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    class lab.AbstractFactory.Linux {
+        + toString()
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    class lab.AbstractFactory.MediumCabinet {
+        + toString()
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    class lab.AbstractFactory.NJSlotComponentFactory {
+        + createCabinet()
+        + createDisplay()
+        + createGPU()
+        + createOS()
+        + createPayment()
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    class lab.AbstractFactory.NJSlotFactory {
+        # makeSlot()
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    class lab.AbstractFactory.NVSlotComponentFactory {
+        + createCabinet()
+        + createDisplay()
+        + createGPU()
+        + createOS()
+        + createPayment()
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    class lab.AbstractFactory.NVSlotFactory {
+        # makeSlot()
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    interface lab.AbstractFactory.OS {
+        {abstract} + toString()
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    interface lab.AbstractFactory.Payment {
+        {abstract} + toString()
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    class lab.AbstractFactory.ProgressiveSlot {
+        - type : String
+        + ProgressiveSlot()
+        ~ build()
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    class lab.AbstractFactory.Reels {
+        + toString()
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    abstract class lab.AbstractFactory.Slot {
+        ~ name : String
+        + getName()
+        + setName()
+        + toString()
+        ~ assembleParts()
+        {abstract} ~ build()
+        ~ collectParts()
+        ~ ship()
+        ~ test()
+        ~ uploadSoftware()
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    interface lab.AbstractFactory.SlotComponentFactory {
+        {abstract} + createCabinet()
+        {abstract} + createDisplay()
+        {abstract} + createGPU()
+        {abstract} + createOS()
+        {abstract} + createPayment()
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    abstract class lab.AbstractFactory.SlotFactory {
+        + orderSlot()
+        {abstract} ~ makeSlot()
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    class lab.AbstractFactory.SlotMachineApp {
+        {static} + main()
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    class lab.AbstractFactory.SmallCabinet {
+        + toString()
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    class lab.AbstractFactory.StraightSlot {
+        - type : String
+        + StraightSlot()
+        ~ build()
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    class lab.AbstractFactory.Symbian {
+        + toString()
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    class lab.AbstractFactory.TicketInAndOut {
+        + toString()
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    class lab.AbstractFactory.VGA {
+        + toString()
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    class lab.AbstractFactory.WSSlotComponentFactory {
+        + createCabinet()
+        + createDisplay()
+        + createGPU()
+        + createOS()
+        + createPayment()
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    class lab.AbstractFactory.WSSlotFactory {
+        # makeSlot()
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    class lab.AbstractFactory.WindowsME {
+        + toString()
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    class lab.AbstractFactory.WindowsXP {
+        + toString()
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    class lab.AbstractFactory.X77 {
+        + toString()
+    }
+  }
+  
+
+  namespace lab.AbstractFactory {
+    class lab.AbstractFactory.X86 {
+        + toString()
+    }
+  }
+  
+
+  lab.AbstractFactory.ARM .up.|> lab.AbstractFactory.GPU
+  lab.AbstractFactory.Android .up.|> lab.AbstractFactory.OS
+  lab.AbstractFactory.Bills .up.|> lab.AbstractFactory.Payment
+  lab.AbstractFactory.BonusSlot -up-|> lab.AbstractFactory.Slot
+  lab.AbstractFactory.BonusSlot o-- lab.AbstractFactory.SlotComponentFactory : componentFactory
+  lab.AbstractFactory.CRT .up.|> lab.AbstractFactory.Display
+  lab.AbstractFactory.Coins .up.|> lab.AbstractFactory.Payment
+  lab.AbstractFactory.LCD .up.|> lab.AbstractFactory.Display
+  lab.AbstractFactory.LargeCabinet .up.|> lab.AbstractFactory.Cabinet
+  lab.AbstractFactory.Linux .up.|> lab.AbstractFactory.OS
+  lab.AbstractFactory.MediumCabinet .up.|> lab.AbstractFactory.Cabinet
+  lab.AbstractFactory.NJSlotComponentFactory .up.|> lab.AbstractFactory.SlotComponentFactory
+  lab.AbstractFactory.NJSlotFactory -up-|> lab.AbstractFactory.SlotFactory
+  lab.AbstractFactory.NVSlotComponentFactory .up.|> lab.AbstractFactory.SlotComponentFactory
+  lab.AbstractFactory.NVSlotFactory -up-|> lab.AbstractFactory.SlotFactory
+  lab.AbstractFactory.ProgressiveSlot -up-|> lab.AbstractFactory.Slot
+  lab.AbstractFactory.ProgressiveSlot o-- lab.AbstractFactory.SlotComponentFactory : componentFactory
+  lab.AbstractFactory.Reels .up.|> lab.AbstractFactory.Display
+  lab.AbstractFactory.Slot o-- lab.AbstractFactory.Cabinet : cabinet
+  lab.AbstractFactory.Slot o-- lab.AbstractFactory.Display : display
+  lab.AbstractFactory.Slot o-- lab.AbstractFactory.GPU : gpu
+  lab.AbstractFactory.Slot o-- lab.AbstractFactory.Payment : payment
+  lab.AbstractFactory.Slot o-- lab.AbstractFactory.OS : software
+  lab.AbstractFactory.SmallCabinet .up.|> lab.AbstractFactory.Cabinet
+  lab.AbstractFactory.StraightSlot -up-|> lab.AbstractFactory.Slot
+  lab.AbstractFactory.StraightSlot o-- lab.AbstractFactory.SlotComponentFactory : componentFactory
+  lab.AbstractFactory.Symbian .up.|> lab.AbstractFactory.OS
+  lab.AbstractFactory.TicketInAndOut .up.|> lab.AbstractFactory.Payment
+  lab.AbstractFactory.VGA .up.|> lab.AbstractFactory.Display
+  lab.AbstractFactory.WSSlotComponentFactory .up.|> lab.AbstractFactory.SlotComponentFactory
+  lab.AbstractFactory.WSSlotFactory -up-|> lab.AbstractFactory.SlotFactory
+  lab.AbstractFactory.WindowsME .up.|> lab.AbstractFactory.OS
+  lab.AbstractFactory.WindowsXP .up.|> lab.AbstractFactory.OS
+  lab.AbstractFactory.X77 .up.|> lab.AbstractFactory.GPU
+  lab.AbstractFactory.X86 .up.|> lab.AbstractFactory.GPU
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml
