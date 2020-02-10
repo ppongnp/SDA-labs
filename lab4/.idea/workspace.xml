@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18be1212-7d6d-4020-86b7-c4208d7db9cd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lab/SingletonFactory/OompaloompaBar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lab/SingletonFactory/OompaloompaBarFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab/SingletonFactory/BarProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab/SingletonFactory/BarProducer.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +92,7 @@
       <workItem from="1580697250522" duration="1300000" />
       <workItem from="1580701388315" duration="8174000" />
       <workItem from="1581244491179" duration="32000" />
-      <workItem from="1581244562640" duration="2181000" />
+      <workItem from="1581244562640" duration="2572000" />
     </task>
     <servers />
   </component>
