@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18be1212-7d6d-4020-86b7-c4208d7db9cd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/lab/SingletonFactory/BarProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab/SingletonFactory/BarProducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab4/lab/SingletonFactory/BarProducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab4/lab/SingletonFactory/BarProducer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab/SingletonFactory/SingletonfactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab/SingletonFactory/SingletonfactoryTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
