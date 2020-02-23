@@ -49,13 +49,6 @@ public class DocumentInvoker {
 		commands.add(cmd);
 	}
 
-	// public void Erase(int line)
-	// {
-	// DocumentEraseCommand cmd = new
-	// DocumentEraseCommand(currentdoc,line);
-	// commands.add(cmd);
-	// }
-
 	public void Bold(int line) {
 		DocumentBoldCommand cmd = new DocumentBoldCommand(currentdoc, line);
 		commands.add(cmd);
