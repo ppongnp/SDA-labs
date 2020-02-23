@@ -1,23 +1,21 @@
 package lab5Code.breakfast;
 public class EatBreakfast {
 	public static void main(String[] args) {
+
+		System.out.println("============   Scrambled Eggs   ============");
 		ScrambledEggs scrambled = new ScrambledEggs();
-		scrambled.crackEggs(2);
-		scrambled.stirEggs();
-		scrambled.cooking();
-		scrambled.serve();
-		
+		scrambled.cookingTheEggs(3);
+		System.out.println("============================================");
+
+		System.out.println("============   Omelette   ============");
 		Omelette omelette = new Omelette();
-		omelette.crackingEggs(3);
-		omelette.prepareEggs();
-		omelette.cook();
-		omelette.serve();
-		
+		omelette.cookingTheEggs(1);
+		System.out.println("======================================");
+
+		System.out.println("============   Sunny side eggs  ============");
 		SunnySide sunny = new SunnySide();
-		sunny.crackEggs(1);
-		sunny.prepare();
-		sunny.cook();
-		sunny.serve();
+		sunny.cookingTheEggs(2);
+		System.out.println("============================================");
 	}
 
 }
