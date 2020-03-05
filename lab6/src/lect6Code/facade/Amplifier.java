@@ -1,4 +1,4 @@
-
+package lect6Code.facade;
 
 public class Amplifier {
 	String description;

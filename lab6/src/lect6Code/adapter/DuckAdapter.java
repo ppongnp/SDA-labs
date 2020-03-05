@@ -1,4 +1,4 @@
-
+package lect6Code.adapter;
 import java.util.Random;
 
 public class DuckAdapter implements Turkey {

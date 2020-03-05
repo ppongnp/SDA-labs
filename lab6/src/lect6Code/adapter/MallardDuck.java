@@ -1,3 +1,5 @@
+package lect6Code.adapter;
+
 public class MallardDuck implements Duck {
 	public void quack() {
 		System.out.println("MallardDuck: Quack");

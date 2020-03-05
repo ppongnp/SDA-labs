@@ -1,3 +1,5 @@
+package lect6Code.adapter;
+
 public class TurkeyAdapter implements Duck {
 	Turkey turkey;
  

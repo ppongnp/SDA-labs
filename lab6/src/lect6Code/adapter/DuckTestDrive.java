@@ -1,3 +1,4 @@
+package lect6Code.adapter;
 import java.util.LinkedList;
 import java.util.List;
 
