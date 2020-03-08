@@ -2,25 +2,40 @@ import java.util.*;
 import java.io.*;
 
 public class CareTaker {
-    public List<Memento> mementoList;
+    public ArrayList<Memento> mementoList;
+    public ArrayList<CommandLog> commandList;
 
     public CareTaker(){
         this.mementoList = new ArrayList<Memento>();
+        this.commandList = new ArrayList<CommandLog>();
     }
 
-    public void add(Memento state){
+    public void add_book_memento(Memento state){
         mementoList.add(state);
     }
-    public Memento get(int index){
+
+    public void add_command_log(CommandLog log){commandList.add(log); }
+
+    public Memento get_book_memento(int index){
         return mementoList.get(index);
     }
 
-    public void saveSerialize(String filename){
-        try {
+    public CommandLog get_command_log(int index) { return commandList.get(index); }
 
+    public void saveInventory(String filename){
+        saveSerialize(mementoList,filename);
+        System.out.println("Inventory saved");
+    }
+
+    public void saveCommand(String filename){
+        saveSerialize(commandList,filename);
+    }
+
+    private void saveSerialize(ArrayList list,String filename){
+        try {
             FileOutputStream file = new FileOutputStream(filename);
             ObjectOutputStream out = new ObjectOutputStream(file);
-            out.writeObject(mementoList);
+            out.writeObject(list);
             out.close();
             file.close();
             System.out.println("Object has been serialized");
@@ -28,22 +43,33 @@ public class CareTaker {
         }catch(IOException ex) {
             ex.printStackTrace();
         }
+
     }
 
-    public void deserialize(String filename){
+    public void  deserializeCommand(String filename){
+        this.commandList = deserialize(filename);
+    }
+
+    public void deserializeInventory(String filename){
+        this.mementoList = deserialize(filename);
+    }
+
+    public ArrayList deserialize(String filename){
         try {
+
             FileInputStream file = new FileInputStream(filename);
             ObjectInputStream in = new ObjectInputStream(file);
-
-            mementoList = (ArrayList<Memento>) in.readObject();
+            ArrayList list = (ArrayList) in.readObject();
             in.close();
             file.close();
-            System.out.println(mementoList);
+            return list;
 
         }catch(IOException ex) {
             ex.printStackTrace();
         }catch (ClassNotFoundException ex) {
             ex.printStackTrace();
-            }
         }
+        return null;
+    }
+
 }
