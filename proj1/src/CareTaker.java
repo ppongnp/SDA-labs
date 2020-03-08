@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-public class CareTaker implements java.io.Serializable {
+public class CareTaker {
     private List<Memento> mementoList = new ArrayList<Memento>();
 
     public void add(Memento state){
@@ -15,19 +15,15 @@ public class CareTaker implements java.io.Serializable {
     public void saveSerialize(String filename){
         try {
 
-            FileOutputStream file = new FileOutputStream(filename);
+            FileOutputStream file = new FileOutputStream("file.ser");
             ObjectOutputStream out = new ObjectOutputStream(file);
-
-            for (Memento m:mementoList) {
-               out.writeObject(m);
-            }
-
+            out.writeObject(mementoList);
             out.close();
             file.close();
             System.out.println("Object has been serialized");
 
         }catch(IOException ex) {
-            System.out.println("IOException is caught");
+            ex.printStackTrace();
         }
     }
 

@@ -1,4 +1,4 @@
-public class Book {
+public class Book implements java.io.Serializable{
     private int id;
     private String book_name;
     private Double price;

@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Memento {
+public class Memento implements java.io.Serializable{
     public ArrayList<Book> book_list;
 
     public Memento(ArrayList<Book> list){
