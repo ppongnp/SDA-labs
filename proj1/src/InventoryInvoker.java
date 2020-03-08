@@ -72,14 +72,9 @@ public class InventoryInvoker {
         careTaker.add_book_memento(temp);
         careTaker.saveInventory(filename);
         this.decorator.saveSerialize();
-
-        try{
-            new FileOutputStream("CommandLog.ser").close();
-        }catch (FileNotFoundException e){
-            e.printStackTrace();
-        }catch (IOException t){
-            t.printStackTrace();
-        }
+        this.commands.clear();
+        File file = new File("CommandLog.ser");
+        file.delete();
 
     }
     public void save_commandLog_to_file(){

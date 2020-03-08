@@ -24,7 +24,7 @@ public class CareTaker {
 
     public void saveInventory(String filename){
         saveSerialize(mementoList,filename);
-        System.out.println("Inventory saved");
+
     }
 
     public void saveCommand(String filename){

@@ -2,20 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce6e94b9-94e3-4493-9294-1fba48030160" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../proj1/src/CommandLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../proj1/src/InventoryDecorator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj1/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../proj1/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj1/LogFile.ser" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj1/file.ser" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../proj1/out/production/proj1/CareTaker.class" beforeDir="false" afterPath="$PROJECT_DIR$/../proj1/out/production/proj1/CareTaker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj1/out/production/proj1/Demo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../proj1/out/production/proj1/Demo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../proj1/out/production/proj1/InventoryInvoker.class" beforeDir="false" afterPath="$PROJECT_DIR$/../proj1/out/production/proj1/InventoryInvoker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj1/out/production/proj1/Memento.class" beforeDir="false" afterPath="$PROJECT_DIR$/../proj1/out/production/proj1/Memento.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../proj1/src/CareTaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../proj1/src/CareTaker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj1/src/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../proj1/src/Demo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../proj1/src/InventoryInvoker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../proj1/src/InventoryInvoker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj1/src/Memento.java" beforeDir="false" afterPath="$PROJECT_DIR$/../proj1/src/Memento.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

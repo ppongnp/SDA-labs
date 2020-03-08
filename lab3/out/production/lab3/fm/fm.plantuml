@@ -3,6 +3,14 @@
 title __FM's Class Diagram__\n
 
   namespace fm {
+    class fm.NJSlotBonus {
+        + NJSlotBonus()
+        ~ ship()
+    }
+  }
+  
+
+  namespace fm {
     class fm.NJSlotProgressive {
         + NJSlotProgressive()
         ~ ship()
@@ -18,6 +26,21 @@ title __FM's Class Diagram__\n
   
 
   namespace fm {
+    class fm.NJSlotStraight {
+        + NJSlotStraight()
+        ~ ship()
+    }
+  }
+  
+
+  namespace fm {
+    class fm.NVSlotBonus {
+        + NVSlotBonus()
+    }
+  }
+  
+
+  namespace fm {
     class fm.NVSlotProgressive {
         + NVSlotProgressive()
     }
@@ -27,6 +50,13 @@ title __FM's Class Diagram__\n
   namespace fm {
     class fm.NVSlotStore {
         # makeSlot()
+    }
+  }
+  
+
+  namespace fm {
+    class fm.NVSlotStraight {
+        + NVSlotStraight()
     }
   }
   
@@ -64,6 +94,37 @@ title __FM's Class Diagram__\n
   
 
   namespace fm {
+    class fm.WSSlotBonus {
+        + WSSlotBonus()
+        ~ ship()
+    }
+  }
+  
+
+  namespace fm {
+    class fm.WSSlotProgressive {
+        + WSSlotProgressive()
+        ~ ship()
+    }
+  }
+  
+
+  namespace fm {
+    class fm.WSSlotStore {
+        # makeSlot()
+    }
+  }
+  
+
+  namespace fm {
+    class fm.WSSlotStraight {
+        + WSSlotStraight()
+        ~ ship()
+    }
+  }
+  
+
+  namespace fm {
     enum slottype {
       bonus
       progressive
@@ -72,10 +133,18 @@ title __FM's Class Diagram__\n
   }
   
 
+  fm.NJSlotBonus -up-|> fm.Slot
   fm.NJSlotProgressive -up-|> fm.Slot
   fm.NJSlotStore -up-|> fm.SlotStore
+  fm.NJSlotStraight -up-|> fm.Slot
+  fm.NVSlotBonus -up-|> fm.Slot
   fm.NVSlotProgressive -up-|> fm.Slot
   fm.NVSlotStore -up-|> fm.SlotStore
+  fm.NVSlotStraight -up-|> fm.Slot
+  fm.WSSlotBonus -up-|> fm.Slot
+  fm.WSSlotProgressive -up-|> fm.Slot
+  fm.WSSlotStore -up-|> fm.SlotStore
+  fm.WSSlotStraight -up-|> fm.Slot
 
 
 right footer
