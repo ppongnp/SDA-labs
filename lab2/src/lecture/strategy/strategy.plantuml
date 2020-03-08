@@ -2,17 +2,16 @@
 
 title __STRATEGY's Class Diagram__\n
 
-  namespace  {
+
     namespace ecture.strategy {
       class lecture.strategy.DecoyDuck {
           + DecoyDuck()
           + display()
       }
     }
-  }
+
   
 
-  namespace  {
     namespace ecture.strategy {
       abstract class lecture.strategy.Duck {
           + Duck()
@@ -24,146 +23,122 @@ title __STRATEGY's Class Diagram__\n
           {abstract} ~ display()
       }
     }
-  }
   
 
-  namespace  {
     namespace ecture.strategy {
       class lecture.strategy.FakeQuack {
           + quack()
       }
     }
-  }
   
 
-  namespace  {
     namespace ecture.strategy {
       interface lecture.strategy.FlyBehavior {
           {abstract} + fly()
       }
     }
-  }
+
   
 
-  namespace  {
+
     namespace ecture.strategy {
       class lecture.strategy.FlyNoWay {
           + fly()
       }
     }
-  }
+
   
 
-  namespace  {
+
     namespace ecture.strategy {
       class lecture.strategy.FlyRocketPowered {
           + fly()
       }
     }
-  }
+
   
 
-  namespace  {
     namespace ecture.strategy {
       class lecture.strategy.FlyWithWings {
           + fly()
       }
     }
-  }
-  
 
-  namespace  {
     namespace ecture.strategy {
       class lecture.strategy.MallardDuck {
           + MallardDuck()
           + display()
       }
     }
-  }
   
 
-  namespace  {
     namespace ecture.strategy {
       class lecture.strategy.MiniDuckSimulator {
           {static} + main()
       }
     }
-  }
   
 
-  namespace  {
     namespace ecture.strategy {
       class lecture.strategy.MiniDuckSimulator1 {
           {static} + main()
       }
     }
-  }
   
 
-  namespace  {
+
     namespace ecture.strategy {
       class lecture.strategy.ModelDuck {
           + ModelDuck()
           + display()
       }
     }
-  }
+
   
 
-  namespace  {
     namespace ecture.strategy {
       class lecture.strategy.MuteQuack {
           + quack()
       }
     }
-  }
   
 
-  namespace  {
     namespace ecture.strategy {
       class lecture.strategy.Quack {
           + quack()
       }
     }
-  }
   
 
-  namespace  {
+
     namespace ecture.strategy {
       interface lecture.strategy.QuackBehavior {
           {abstract} + quack()
       }
     }
-  }
-  
 
-  namespace  {
     namespace ecture.strategy {
       class lecture.strategy.RedHeadDuck {
           + RedHeadDuck()
           + display()
       }
     }
-  }
   
 
-  namespace  {
     namespace ecture.strategy {
       class lecture.strategy.RubberDuck {
           + RubberDuck()
           + display()
       }
     }
-  }
-  
 
-  namespace  {
+
     namespace ecture.strategy {
       class lecture.strategy.Squeak {
           + quack()
       }
     }
-  }
+
   
 
   lecture.strategy.DecoyDuck -up-|> lecture.strategy.Duck
