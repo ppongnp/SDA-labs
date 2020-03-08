@@ -51,4 +51,12 @@ public class Inventory {
         }
         return temp;
     }
+
+    public Memento saveBookListToMemento(){
+        return new Memento(book_list);
+    }
+
+    public void getBookListFromMemento(Memento memento){
+        this.book_list = memento.getBook_list();
+    }
 }
