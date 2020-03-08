@@ -1,7 +1,4 @@
 import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
 import java.util.*;
 
 public class InventoryInvoker {
@@ -16,43 +13,37 @@ public class InventoryInvoker {
         this.careTaker = new CareTaker();
         this.decorator = new InventoryDecorator(this.inventory);
     }
-    public void printcom(){
-        System.out.println("inventory \n");
-        this.inventory.printint();
-        System.out.println("all command\n");
-        this.decorator.deserialize();
-        System.out.println(this.decorator.getAllCommands());
-        System.out.println("command Log\n");
-        System.out.println(commands);
-    }
 
     public void add_book(String name,Double price,int quantity){
         AddBookCommand cmd = new AddBookCommand(inventory,name,price,quantity);
         commands.add(cmd);
-        processing_command(cmd);
         cmd.execute();
+        processing_command(cmd);
     }
 
     public void remove_book(String name){
         RemoveBookCommand cmd = new RemoveBookCommand(inventory,name);
         commands.add(cmd);
-        processing_command(cmd);
         cmd.execute();
+        processing_command(cmd);
     }
 
     public void add_book_copies(String name,int quantity){
         AddCopiesCommand cmd = new AddCopiesCommand(inventory,name,quantity);
         commands.add(cmd);
-        processing_command(cmd);
         cmd.execute();
+        processing_command(cmd);
     }
 
     public void change_book_price(String name,Double price){
         ChangePriceCommand cmd = new ChangePriceCommand(inventory,name,price);
         commands.add(cmd);
-        processing_command(cmd);
         cmd.execute();
+        processing_command(cmd);
 
+    }
+    public void list_all_book(){
+        this.inventory.listAllBook();
     }
 
     public void undo_current_cmd(){
@@ -75,6 +66,8 @@ public class InventoryInvoker {
         this.commands.clear();
         File file = new File("CommandLog.ser");
         file.delete();
+        save_commandLog_to_file();
+        System.out.println("=== Saved successfully! ");
 
     }
     public void save_commandLog_to_file(){
@@ -83,11 +76,27 @@ public class InventoryInvoker {
         careTaker.add_command_log(temp);
         careTaker.saveCommand(filename);
     }
+
+    public void list_all_command(){
+        ArrayList<InventoryCommand> temp = this.decorator.getAllCommands();
+        for(InventoryCommand c:temp){
+            System.out.println("  " + c);
+        }
+    }
     public void load_inventory_from_file(){
         String filename = "Inventory.ser";
         careTaker.deserializeInventory(filename);
         Memento current = careTaker.get_book_memento(careTaker.mementoList.size()- 1);
         this.inventory.getBookListFromMemento(current);
+    }
+
+    public void run_remaining_command(){
+        if(!commands.isEmpty()){
+            for(InventoryCommand m : commands){
+                m.execute();
+                this.decorator.addCommand(m);
+            }
+        }
     }
 
     public void load_command_form_file(){

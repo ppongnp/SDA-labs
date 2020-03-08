@@ -20,7 +20,6 @@ public class InventoryDecorator extends Inventory {
             out.writeObject(this.allCommands);
             out.close();
             file.close();
-            System.out.println("Object has been serialized");
 
         }catch(IOException ex) {
             ex.printStackTrace();

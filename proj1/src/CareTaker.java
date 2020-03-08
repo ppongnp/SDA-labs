@@ -13,15 +13,11 @@ public class CareTaker {
     public void add_book_memento(Memento state){
         mementoList.add(state);
     }
-
     public void add_command_log(CommandLog log){commandList.add(log); }
-
     public Memento get_book_memento(int index){
         return mementoList.get(index);
     }
-
     public CommandLog get_command_log(int index) { return commandList.get(index); }
-
     public void saveInventory(String filename){
         saveSerialize(mementoList,filename);
 
@@ -38,7 +34,6 @@ public class CareTaker {
             out.writeObject(list);
             out.close();
             file.close();
-            System.out.println("Object has been serialized");
 
         }catch(IOException ex) {
             ex.printStackTrace();
