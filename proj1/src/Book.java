@@ -30,4 +30,8 @@ public class Book implements java.io.Serializable{
     public void setPrice(Double price){
         this.price = price;
     }
+
+    public void setQuantity(int quantity){
+        this.quantity = quantity;
+    }
 }

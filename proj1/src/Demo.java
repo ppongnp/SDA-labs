@@ -19,5 +19,8 @@ public class Demo {
         String filename = "file.ser";
         CareTaker careTaker = new CareTaker();
         careTaker.deserialize(filename);
+        Inventory inven = new Inventory();
+        inven.getBookListFromMemento(careTaker.mementoList.get(careTaker.mementoList.size()-1));
+        inven.searchByName("test4");
     }
 }

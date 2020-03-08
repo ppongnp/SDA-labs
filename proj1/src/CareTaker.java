@@ -2,7 +2,7 @@ import java.util.*;
 import java.io.*;
 
 public class CareTaker {
-    private List<Memento> mementoList = new ArrayList<Memento>();
+    public List<Memento> mementoList = new ArrayList<Memento>();
 
     public void add(Memento state){
         mementoList.add(state);
@@ -32,11 +32,9 @@ public class CareTaker {
             FileInputStream file = new FileInputStream(filename);
             ObjectInputStream in = new ObjectInputStream(file);
 
-            String object_list = in.readObject().toString();
+            mementoList = (ArrayList<Memento>) in.readObject();
             in.close();
             file.close();
-
-            System.out.println(object_list);
 
         }catch(IOException ex) {
             System.out.println("IOException is caught");

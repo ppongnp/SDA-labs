@@ -1,12 +1,10 @@
 import java.util.*;
 
 public class Inventory {
-    public int id;
     public ArrayList<Book> book_list;
     static int count = 0;
 
-    public Inventory(int id){
-        this.id = id;
+    public Inventory(){
         book_list = new ArrayList<Book>();
     }
 
@@ -14,6 +12,7 @@ public class Inventory {
         count += 1;
         Book newOne = new Book(count,name,price,quantity);
         book_list.add(newOne);
+
     }
 
     public void removeBook(String name){
@@ -22,6 +21,18 @@ public class Inventory {
             if(book_list.get(i).getBook_name().equals(name)) {
                 book_list.remove(i);
                 result = "Remove success";
+                break;
+            }
+        }
+        System.out.println(result);
+    }
+
+    public void addBookCopiesByName(String name,int quantity){
+        String result = "Add failed";
+        for(int i = 0; i < book_list.size();i++){
+            if(book_list.get(i).getBook_name().equals(name)) {
+                book_list.get(i).setQuantity(book_list.get(i).getQuantity() + quantity);
+                result = "Add success";
                 break;
             }
         }

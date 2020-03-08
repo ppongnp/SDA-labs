@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18be1212-7d6d-4020-86b7-c4208d7db9cd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab4/lab/SingletonFactory/BarProducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab4/lab/SingletonFactory/BarProducer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab/SingletonFactory/SingletonfactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lab/SingletonFactory/SingletonfactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../proj1/src/AddBookCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../proj1/src/InventoryCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj1/out/production/proj1/CareTaker.class" beforeDir="false" afterPath="$PROJECT_DIR$/../proj1/out/production/proj1/CareTaker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj1/out/production/proj1/Demo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../proj1/out/production/proj1/Demo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj1/src/CareTaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../proj1/src/CareTaker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj1/src/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../proj1/src/Demo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj1/src/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../proj1/src/Inventory.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -95,6 +99,7 @@
       <workItem from="1580701388315" duration="8174000" />
       <workItem from="1581244491179" duration="32000" />
       <workItem from="1581244562640" duration="2572000" />
+      <workItem from="1583662104376" duration="10000" />
     </task>
     <servers />
   </component>
