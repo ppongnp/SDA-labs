@@ -1,4 +1,4 @@
-public class ChangePriceCommand implements InventoryCommand {
+public class ChangePriceCommand implements InventoryCommand,java.io.Serializable {
 
     private Inventory inventory;
     private String name;
@@ -15,7 +15,7 @@ public class ChangePriceCommand implements InventoryCommand {
     public void execute(){
         inventory.changeBookPrice(name,price);
     }
-    
+
     public void undo() {
         inventory.searchByName(name).setPrice(oldprice);
     }

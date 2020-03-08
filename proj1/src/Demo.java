@@ -16,11 +16,19 @@ public class Demo {
         careTaker.saveSerialize(filename);
 
          */
-        String filename = "file.ser";
-        CareTaker careTaker = new CareTaker();
-        careTaker.deserialize(filename);
-        Inventory inven = new Inventory();
-        inven.getBookListFromMemento(careTaker.mementoList.get(careTaker.mementoList.size()-1));
-        inven.searchByName("test4");
+        /*
+        InventoryInvoker invoker = new InventoryInvoker();
+        invoker.add_book("test4",34.9,11);
+        invoker.add_book("test5",74.5,50);
+        invoker.add_book("test6",64.7,23);
+        invoker.change_book_price("test2",45.6);
+        */
+
+
+        InventoryInvoker invoker = new InventoryInvoker();
+        invoker.load_from_file();
+        invoker.printcom();
+
+         
     }
 }

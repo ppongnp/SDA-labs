@@ -1,4 +1,4 @@
-public class AddBookCommand implements InventoryCommand {
+public class AddBookCommand implements InventoryCommand,java.io.Serializable{
 
     private Inventory inventory;
     private String name;

@@ -2,12 +2,15 @@ import java.util.*;
 import java.io.*;
 
 public class CareTaker {
-    public List<Memento> mementoList = new ArrayList<Memento>();
+    public List<Memento> mementoList;
+
+    public CareTaker(){
+        this.mementoList = new ArrayList<Memento>();
+    }
 
     public void add(Memento state){
         mementoList.add(state);
     }
-
     public Memento get(int index){
         return mementoList.get(index);
     }
@@ -15,7 +18,7 @@ public class CareTaker {
     public void saveSerialize(String filename){
         try {
 
-            FileOutputStream file = new FileOutputStream("file.ser");
+            FileOutputStream file = new FileOutputStream(filename);
             ObjectOutputStream out = new ObjectOutputStream(file);
             out.writeObject(mementoList);
             out.close();
@@ -35,9 +38,10 @@ public class CareTaker {
             mementoList = (ArrayList<Memento>) in.readObject();
             in.close();
             file.close();
+            System.out.println(mementoList);
 
         }catch(IOException ex) {
-            System.out.println("IOException is caught");
+            ex.printStackTrace();
         }catch (ClassNotFoundException ex) {
             ex.printStackTrace();
             }

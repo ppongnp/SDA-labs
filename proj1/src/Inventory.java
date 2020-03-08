@@ -1,11 +1,15 @@
 import java.util.*;
 
-public class Inventory {
-    public ArrayList<Book> book_list;
+public class Inventory implements java.io.Serializable{
+    private ArrayList<Book> book_list;
     static int count = 0;
 
     public Inventory(){
         book_list = new ArrayList<Book>();
+    }
+
+    public ArrayList<Book> getBook_list(){
+        return book_list;
     }
 
     public void addBook(String name,Double price,int quantity){
@@ -56,16 +60,15 @@ public class Inventory {
         for(int i = 0; i < book_list.size(); i++){
             if(book_list.get(i).getBook_name().equals(name)){
                 temp = book_list.get(i);
-                System.out.println("huhu");
                 break;
             }
         }
         return temp;
     }
-
-    public Memento saveBookListToMemento(){
-        return new Memento(book_list);
+    public void printint(){
+        System.out.println(book_list);
     }
+
 
     public void getBookListFromMemento(Memento memento){
         this.book_list = memento.getBook_list();
