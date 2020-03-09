@@ -27,6 +27,12 @@ public class InventoryInvoker {
         cmd.execute();
         processing_command(cmd);
     }
+    public void sell_book(String name,int amount){
+        SellBookCommand cmd = new SellBookCommand(inventory,name,amount);
+        commands.add(cmd);
+        cmd.execute();
+        processing_command(cmd);
+    }
 
     public void add_book_copies(String name,int quantity){
         AddCopiesCommand cmd = new AddCopiesCommand(inventory,name,quantity);
@@ -78,6 +84,7 @@ public class InventoryInvoker {
     }
 
     public void list_all_command(){
+        this.decorator.deserialize();
         ArrayList<InventoryCommand> temp = this.decorator.getAllCommands();
         for(InventoryCommand c:temp){
             System.out.println("  " + c);

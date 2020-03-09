@@ -1,5 +1,4 @@
 public class RemoveBookCommand implements InventoryCommand,java.io.Serializable {
-
     private Inventory inventory;
     private String name;
     private Book current;

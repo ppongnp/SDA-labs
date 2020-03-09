@@ -24,6 +24,19 @@ public class Inventory implements java.io.Serializable{
         System.out.println("=== Successfully added new book!");
         System.out.println(" Your new book is " + newOne.toString() + "\n" );
     }
+    public void sellBook(String name,int amount){
+        String result = "=== Selling failed: cant find the target book";
+        for(int i = 0;i < book_list.size();i++){
+            if(book_list.get(i).getBook_name().equals(name)) {
+                Double price = amount * book_list.get(i).getPrice();
+                book_list.get(i).setQuantity(book_list.get(i).getQuantity() - amount);
+                result = "Selling total " + amount +" copies of " + book_list.get(i).getBook_name() +
+                        " for " + price + "Baht";
+                break;
+            }
+        }
+        System.out.println(result);
+    }
 
     public void removeBook(String name){
         String result = "=== Remove failed: cant find the target book";

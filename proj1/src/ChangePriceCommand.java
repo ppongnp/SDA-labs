@@ -1,5 +1,4 @@
 public class ChangePriceCommand implements InventoryCommand,java.io.Serializable {
-
     private Inventory inventory;
     private String name;
     private Double price;

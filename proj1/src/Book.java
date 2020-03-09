@@ -36,7 +36,7 @@ public class Book implements java.io.Serializable{
     }
 
     public String toString() {
-        return "+" + id + ": " + book_name + "\n " +
+        return ":" + id + ": " + book_name + "\n " +
                 "price = " + price + "\n " +
                 "quantity = " + quantity;
 
