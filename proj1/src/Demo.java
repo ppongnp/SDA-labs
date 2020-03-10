@@ -26,8 +26,8 @@ public class Demo {
             System.out.println("  Press 1 to add new books");
             System.out.println("  Press 2 to to remove a book");
             System.out.println("  Press 3 to add more copies of books");
-            System.out.println("  Press 4 to change the books price");
-            System.out.println("  Press 5 to sell the book");
+            System.out.println("  Press 4 to sell the books");
+            System.out.println("  Press 5 to change the book price");
             System.out.println("  Press 6 to save the progress");
             System.out.println("  Press 7 to list all of the book");
             System.out.println("  Press 8 to list all of the previous command");
@@ -63,6 +63,7 @@ public class Demo {
                     String target_sell = sell_scan.nextLine();
                     int quan = sell_scan.nextInt();
                     invoker.sell_book(target_sell,quan);
+                    break;
                 case 5:
                     System.out.println("=== Enter the book name and price that you want to change:");
                     Scanner price_scan = new Scanner(System.in);
