@@ -5,11 +5,6 @@
  */
 package lab6Code.Adapter;
 
-
-/**
- *
- * @author boonjv
- */
 public class Employee {
  
     private String name;
@@ -40,5 +35,14 @@ public class Employee {
     public double getSalary() {
         return salary;
     }
-  
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", emp_num=" + emp_num +
+                ", salary=" + salary +
+                '}';
+    }
 }
