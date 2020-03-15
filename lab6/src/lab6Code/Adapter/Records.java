@@ -11,22 +11,37 @@ import java.util.*;
  */
 public class Records {
 
-    private ArrayList employees; //Stores the employees
+    private ArrayList<Employee> employees; //Stores the employees
 
     public Records() {
         employees = new ArrayList();
     }
 
     public void insert(Employee employee) {
-        //Code to insert employee
+        employees.add(employee);
     }
 
     public void remove(long emp_num) {
-        //Code to remove employee
+        for(int i = 0; i < employees.size();i++){
+            if (employees.get(i).getEmpNum() == emp_num){
+                employees.remove(employees.get(i));
+                break;
+            }
+        }
     }
 
     public boolean isEmployee(long emp_num) {
-        return true;
+        for(Employee e:employees){
+            if(e.getEmpNum() == emp_num){
+                return true;
+            }
+        }
+        return false;
+    }
+    public void listAllEmployee(){
+        for (Employee e:employees){
+            System.out.println(e.toString());
+        }
     }
     
 }
