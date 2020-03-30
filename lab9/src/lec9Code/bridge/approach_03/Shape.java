@@ -1,3 +1,4 @@
+package lec9Code.bridge.approach_03;
 public abstract class Shape {
 
   protected int x;

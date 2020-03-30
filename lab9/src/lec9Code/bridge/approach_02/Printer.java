@@ -1,3 +1,4 @@
+package lec9Code.bridge.approach_02;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.util.LinkedList;

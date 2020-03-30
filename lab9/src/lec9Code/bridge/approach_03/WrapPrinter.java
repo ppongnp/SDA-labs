@@ -1,3 +1,4 @@
+package lec9Code.bridge.approach_03;
 public class WrapPrinter extends DrawingService {
 
   private Printer printer;

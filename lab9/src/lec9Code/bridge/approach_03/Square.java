@@ -1,3 +1,4 @@
+package lec9Code.bridge.approach_03;
 public class Square extends Shape {
 
   protected int length;

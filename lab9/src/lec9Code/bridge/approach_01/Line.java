@@ -1,3 +1,4 @@
+package lec9Code.bridge.approach_01;
 public class Line {
 
    public int x1;

@@ -1,3 +1,4 @@
+package lec9Code.bridge.approach_01;
 public class PrinterRect extends Rectangle {
 
   private Printer printer;

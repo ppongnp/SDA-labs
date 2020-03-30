@@ -1,3 +1,4 @@
+package lec9Code.bridge.approach_03;
 public class Rectangle extends Shape {
 
   protected int x2;

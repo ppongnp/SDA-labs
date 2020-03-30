@@ -1,3 +1,4 @@
+package lec9Code.bridge.approach_02;
 public abstract class MonitorShapes extends Shape {
 
   private Monitor monitor;

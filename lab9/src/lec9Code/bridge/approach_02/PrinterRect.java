@@ -1,3 +1,4 @@
+package lec9Code.bridge.approach_02;
 public class PrinterRect extends PrinterShapes {
 
   protected int x2;

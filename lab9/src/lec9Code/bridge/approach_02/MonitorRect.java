@@ -1,3 +1,4 @@
+package lec9Code.bridge.approach_02;
 public class MonitorRect extends MonitorShapes {
 
   protected int x2;
