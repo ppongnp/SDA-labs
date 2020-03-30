@@ -1,4 +1,4 @@
-package lab9Code;
+package lab9Code.mediator;
 
 public class Demo {
 
