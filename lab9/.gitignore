@@ -3,3 +3,4 @@
 /out/
 *.plantuml
 *.iml
+*.DS_Store
