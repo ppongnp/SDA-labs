@@ -44,7 +44,9 @@ public class Cook {
    * Uses the meal builder of this cook to construct all portions of a meal.
    */
   public void constructMeal() {
-    // Take the necessary steps
+    builder.Entree();
+    builder.Drink();
+    builder.Side();
   }
 
 }

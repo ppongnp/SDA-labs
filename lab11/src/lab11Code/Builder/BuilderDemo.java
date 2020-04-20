@@ -9,7 +9,7 @@ package lab11Code.Builder;
  *
  * @author Jerod Weinman
  */
-public class BuilderExample {
+public class BuilderDemo {
 
   
   /**
@@ -33,9 +33,19 @@ public class BuilderExample {
 
     System.out.println("Order up! A " + meal);
 
-
-
     cook.setMealBuilder (healthyBuilder);
+
+    cook.constructMeal();
+    meal = cook.getMeal();
+
+    System.out.println("Order up! A " + meal);
+
+    cook.constructMeal();
+    meal = cook.getMeal();
+
+    System.out.println("Order up! A " + meal);
+
+    cook.setMealBuilder (burgerBuilder);
 
     cook.constructMeal();
     meal = cook.getMeal();

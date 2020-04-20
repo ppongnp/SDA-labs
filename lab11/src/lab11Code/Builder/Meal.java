@@ -24,33 +24,20 @@ public class Meal {
    *
    * @param entree Specified value to set the entree of this meal to
    */
-  public void setEntree(String entree) { 
+  public void setEntree(String entree) {
     this.entree = entree;
   }
 
-  /**
-   * Set the side dish of this meal to the specified value.
-   *
-   * @param entree Specified value to set the side dish of this meal to
-   */
+
   public void setSide(String side) { 
     this.side = side;
   }
 
-  /**
-   * Set the drink of this meal to the specified value.
-   *
-   * @param entree Specified value to set the drink of this meal to
-   */
   public void setDrink(String drink) {
     this.drink = drink;
   }
 
-  /**
-   * Return a string representation of this meal indicating all portions.
-   *
-   * @return a String indicating all portions this meal
-   */
+
   public String toString() {
     return entree + " with a side of " + side + " and a " + drink;
   }

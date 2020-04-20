@@ -16,7 +16,10 @@ package lab11Code.Builder;
  */
 public abstract class MealBuilder {
 
-  protected Meal theMeal;
+  abstract Meal getMeal();
+  abstract void Entree();
+  abstract void Side();
+  abstract void Drink();
 
   // Additional methods here
 
