@@ -13,7 +13,7 @@ public class DISpringHelloWorld {
     BeanDefinitionReader reader = new PropertiesBeanDefinitionReader(bf);
     reader.loadBeanDefinitions(
       new FileSystemResource(
-        new File("hello.properties")));
+        new File("/Users/ppongnp/IdeaProjects/lab11/src/lab11Code/hello/hello.properties")));
 
     MessageService service = (MessageService) bf.getBean("service");
     service.execute();
