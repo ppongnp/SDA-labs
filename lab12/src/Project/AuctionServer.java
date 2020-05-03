@@ -24,9 +24,11 @@ public class AuctionServer implements  IAuctionServer {
     public void bidOnItem(String bidderName, String itemName, double bid) {
         Item target = items.get(itemName);
         if(target == null){
-            System.out.println("ERROR: Item not found !");
+            System.out.println("  ERROR: Item not found !\n");
         }else{
             target.newBid(bid,bidderName);
+            System.out.println("==== The current bidding are ");
+            System.out.println(target.toString());
         }
     }
 

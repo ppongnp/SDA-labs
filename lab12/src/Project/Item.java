@@ -42,8 +42,9 @@ public class Item {
             setBid(value);
             setBidderName(bidderName);
             notifyObserver();
+            System.out.println("==== Bidding successfully ");
         }else{
-            System.out.println("ERROR: not high value enough ! ");
+            System.out.println("  ERROR: not high value enough ! ");
         }
     }
 
@@ -101,14 +102,11 @@ public class Item {
 
     @Override
     public String toString() {
-        return "Item{" +
-                "ownerName='" + ownerName + '\'' +
-                ", itemName='" + itemName + '\'' +
-                ", itemDesc='" + itemDesc + '\'' +
-                ", bidderName='" + bidderName + '\'' +
-                ", startBid=" + startBid +
-                ", bid=" + bid +
-                ", auctionTime=" + auctionTime +
-                '}';
+        return  "  Name: " + itemName + "\n" +
+                "  Owner: " + ownerName + "\n" +
+                "  Description: " + itemDesc + "\n" +
+                "  Current bid: " + bid + "\n" +
+                "  Bidder name: " + bidderName + "\n";
+
     }
 }
